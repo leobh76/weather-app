@@ -29,8 +29,8 @@ const SearchCard = () => {
       setHumidity(response.current.humidity);
       setWind(response.current.wind_kph);
     } catch (err) {
-      alert("Please enter a valid city name!");
       setShowWeatherCard(false);
+      alert("Please enter a valid city name!");
     }
   };
 
@@ -44,7 +44,7 @@ const SearchCard = () => {
         <p className={styles.paragraph}>City Name</p>
         <div className={styles.searchElement}>
           <input
-            // If user clicks outside of the search bar, hide the weather card
+            // If user focuses the search bar, hide the weather card
             onFocus={() => setShowWeatherCard(false)}
             onChange={updateCity}
             className={styles.searchBar}
