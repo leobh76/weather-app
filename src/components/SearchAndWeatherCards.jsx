@@ -3,7 +3,7 @@ import styles from "./SearchAndWeatherCards.module.css";
 
 const SearchCard = () => {
   const [showWeatherCard, setShowWeatherCard] = React.useState(false);
-  
+
   const [city, setCity] = React.useState("");
   const [country, setCountry] = React.useState("");
   const [temperature, setTemperature] = React.useState("");
@@ -30,6 +30,7 @@ const SearchCard = () => {
       setWind(response.current.wind_kph);
     } catch (err) {
       alert("Please enter a valid city name!");
+      setShowWeatherCard(false);
     }
   };
 

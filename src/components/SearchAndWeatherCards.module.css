@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    align-self: center;
+    align-self: flex-start;
     max-width: 20rem;
     max-height: 25rem;
     margin: 3%;
@@ -12,10 +12,11 @@
 }
 
 .title {
-    width: 25rem;
-    font-size: 2.2rem;
+    width: 20rem;
+    font-size: 2rem;
     font-weight: 300;
     margin: 0;
+    margin-bottom: 1.5rem;
     color: gray;
 }
 
@@ -68,13 +69,18 @@
     align-self: center;
     max-width: 20rem;
     max-height: 25rem;
-    padding: 1rem;
     border-radius: 2rem;
     background-color: #26737D;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
     margin: 3%;
     padding: 3%;
     color: white;
+}
+
+@media (max-width: 840px) {
+    .weatherCard {
+        margin-top: 3rem;
+    }
 }
 
 .displayNone {
@@ -94,6 +100,7 @@
     align-items: center;
     margin-left: 0.8rem;
     margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
     line-height: 10%;
 }
 
