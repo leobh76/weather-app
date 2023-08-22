@@ -1,0 +1,14 @@
+.mainPage {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-content: center;
+}
+
+@media (max-width: 840px) {
+    .mainPage {
+        flex-direction: column;
+    }
+}
