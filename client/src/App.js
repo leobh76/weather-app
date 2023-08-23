@@ -10,7 +10,6 @@ function App() {
     try {
       const response = await axios.get(`/weather?location=${location}`);
       setWeatherData(response.data);
-      console.log(response.data);
     } catch (error) {
       console.error("Error fetching weather data:", error);
       alert("Please enter a valid city name");
